@@ -17,30 +17,33 @@ public class PersonalityController : MonoBehaviour {
     public static PersonalityController thisPersonalityController;
     public Personality currentPersonality;
     public Personality nextPersonality;
-    public Camera thirdPersonCamera;
-    public Camera camGoals;
-    public Camera camEntities;
+    public GameObject cameras;
 
-    public float attackRange = 3.0f;
-    public float hitRange = 1.5f;
-    public float socializeRange = 10.0f;
-    public float walkSpeed = 1.0f;
-    public float rotateSpeed = 3.0f;
-    public float timeForAttack = 0.5f;
+    private Camera thirdPersonCamera;
+    private Camera camGoals;
+    private Camera camEntities;
 
-    public Image imageCurrentPersonality;
-    public Color colorNormal;
-    public Color colorAttack;
-    public Color colorSocialize;
+    private float attackRange = 6.0f;
+    private float hitRange = 1.5f;
+    private float socializeRange = 8.0f;
+    private float walkSpeed = 15.0f;
+    private float rotateSpeed = 3.0f;
+    private float timeForAttack = 0.3f;
+
+    private Image imageCurrentPersonality;
+    private Color colorNormal;
+    private Color colorAttack;
+    private Color colorSocialize;
 
     public Material targetMaterial;
     public Material nonTargetMaterial;
 
     public DialogueManager dialogueManager;
 
-    public Text winText;
-    public Text timerTextSeconds;
-    public Text timerTextMilliseconds;
+    public GameObject canvas;
+    private Text winText;
+    private Text timerTextSeconds;
+    private Text timerTextMilliseconds;
 
     private static bool pauseGame;
 
@@ -119,7 +122,21 @@ public class PersonalityController : MonoBehaviour {
     public PlayerControllerRigidBody playerControllerRigid;
     
     void Start () {
+        colorNormal = new Color32(0xFF, 0xFF, 0xFF, 0xFF);
+        colorAttack = new Color32(0xFF, 0xC2, 0xC2, 0xFF);
+        colorSocialize = new Color32(0xFF, 0xF2, 0xF9, 0xFF);
+
+        winText = canvas.transform.GetChild(0).GetComponent<Text>();
+        timerTextSeconds = canvas.transform.GetChild(10).GetComponent<Text>();
+        timerTextMilliseconds = canvas.transform.GetChild(11).GetComponent<Text>();
+        imageCurrentPersonality = canvas.transform.GetChild(6).GetComponent<Image>();
+
         thisPersonalityController = this;
+
+        thirdPersonCamera = cameras.transform.GetChild(0).GetComponent<Camera>();
+        camGoals = cameras.transform.GetChild(1).GetComponent<Camera>();
+        camEntities = cameras.transform.GetChild(2).GetComponent<Camera>();
+
         postProcessingBehaviour = thirdPersonCamera.gameObject.GetComponent<PostProcessingBehaviour>();
         postProcessingBehaviour.enabled = false;
         playerControllerRigid = GetComponent<PlayerControllerRigidBody>();
