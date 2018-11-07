@@ -17,7 +17,7 @@ public class PersonalityControllerStart : PersonalityController {
             }
             else if (newPersonality == Personality.ATTACK) {
                 if (firstAttack) {
-                    DialogueManager.AddDialogue(Personality.ATTACK, new string[] { "I will protect us..", "If anyone comes close to us..", "I will kill them.." });
+                    DialogueManager.AddDialogue(Personality.ATTACK, new string[] { "I will protect us..", "If anyone comes close to us..", "I will kill them!" });
                     firstAttack = false;
                 }
             }

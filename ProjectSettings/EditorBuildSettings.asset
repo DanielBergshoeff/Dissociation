@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ShadesLevels/Shade1.unity
     guid: e7b301602a107274e9c141e3b80dc033
+  - enabled: 1
+    path: Assets/Scenes/ShadesLevels/Shade2.unity
+    guid: 7eb61900c66da3b43b4a7a96b3dcf09a
   m_configObjects: {}
