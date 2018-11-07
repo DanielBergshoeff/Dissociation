@@ -21,11 +21,11 @@ public static class GameManager {
     public static void StartDialogue() {
         Debug.Log("Add Dialogue");
         if (currentScene == 0) {
-            DialogueManager.AddDialogue(Personality.FIND, new string[] { "I must get to the gold.. ", "I have to hurry.." });
+            DialogueManager.AddDialogue(Personality.FIND, new string[] { "I must get to the cookie.. ", "I have to hurry!" });
         }
         else if(currentScene == 1) {
-            DialogueManager.AddDialogue(Personality.FIND, new string[] { "I must get to the gold.. ", "I have to hurry.." });
-            DialogueManager.AddDialogue(Personality.ATTACK, new string[] { "No one will harm us..", "I will keep us safe.." });
+            DialogueManager.AddDialogue(Personality.FIND, new string[] { "I must get to the cookie.. ", "I have to hurry!" });
+            DialogueManager.AddDialogue(Personality.ATTACK, new string[] { "No one will harm us..", "I will keep us safe!" });
         }
         else if(currentScene == 2) {
             DialogueManager.AddDialogue(Personality.SOCIALIZE, new string[] { "Are these my friends..?", "They look nice!" });
