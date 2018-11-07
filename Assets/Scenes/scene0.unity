@@ -491,12 +491,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 562a3ca5c04b03b45b911e488e745cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 0}
-  dialogueText: {fileID: 0}
+  dialoguePanel: {fileID: 1668203628}
+  dialogueText: {fileID: 1668203627}
   timePerDialogue: 3
-  standardModel: {fileID: 0}
-  attackModel: {fileID: 0}
-  socializeModel: {fileID: 0}
+  standardModel: {fileID: 1668203626}
+  attackModel: {fileID: 1668203625}
+  socializeModel: {fileID: 1668203624}
   currentPersonality: 0
 --- !u!1001 &431360797
 Prefab:
@@ -1720,6 +1720,32 @@ RectTransform:
 --- !u!1 &1668203623 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1830339295669370, guid: 99e1af2884ddfba4e926c5de5ab72297,
+    type: 2}
+  m_PrefabInternal: {fileID: 1668203621}
+--- !u!1 &1668203624 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1451463344437068, guid: 99e1af2884ddfba4e926c5de5ab72297,
+    type: 2}
+  m_PrefabInternal: {fileID: 1668203621}
+--- !u!1 &1668203625 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1847098018692386, guid: 99e1af2884ddfba4e926c5de5ab72297,
+    type: 2}
+  m_PrefabInternal: {fileID: 1668203621}
+--- !u!1 &1668203626 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1053651583161408, guid: 99e1af2884ddfba4e926c5de5ab72297,
+    type: 2}
+  m_PrefabInternal: {fileID: 1668203621}
+--- !u!114 &1668203627 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114001647828373278, guid: 99e1af2884ddfba4e926c5de5ab72297,
+    type: 2}
+  m_PrefabInternal: {fileID: 1668203621}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1 &1668203628 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1976592792326894, guid: 99e1af2884ddfba4e926c5de5ab72297,
     type: 2}
   m_PrefabInternal: {fileID: 1668203621}
 --- !u!4 &1813422944 stripped

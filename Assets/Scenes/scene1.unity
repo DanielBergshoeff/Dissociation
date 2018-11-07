@@ -1857,7 +1857,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 566243603}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 167.61972, y: 162.0824, z: 86.22528}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 842509294}
@@ -1875,12 +1875,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 562a3ca5c04b03b45b911e488e745cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 0}
-  dialogueText: {fileID: 0}
+  dialoguePanel: {fileID: 2119151592}
+  dialogueText: {fileID: 2119151591}
   timePerDialogue: 3
-  standardModel: {fileID: 0}
-  attackModel: {fileID: 0}
-  socializeModel: {fileID: 0}
+  standardModel: {fileID: 2119151590}
+  attackModel: {fileID: 2119151589}
+  socializeModel: {fileID: 2119151588}
   currentPersonality: 0
 --- !u!1001 &568701537
 Prefab:
@@ -6426,6 +6426,32 @@ GameObject:
 --- !u!224 &2119151587 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224853006175268980, guid: 99e1af2884ddfba4e926c5de5ab72297,
+    type: 2}
+  m_PrefabInternal: {fileID: 2119151585}
+--- !u!1 &2119151588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1451463344437068, guid: 99e1af2884ddfba4e926c5de5ab72297,
+    type: 2}
+  m_PrefabInternal: {fileID: 2119151585}
+--- !u!1 &2119151589 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1847098018692386, guid: 99e1af2884ddfba4e926c5de5ab72297,
+    type: 2}
+  m_PrefabInternal: {fileID: 2119151585}
+--- !u!1 &2119151590 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1053651583161408, guid: 99e1af2884ddfba4e926c5de5ab72297,
+    type: 2}
+  m_PrefabInternal: {fileID: 2119151585}
+--- !u!114 &2119151591 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114001647828373278, guid: 99e1af2884ddfba4e926c5de5ab72297,
+    type: 2}
+  m_PrefabInternal: {fileID: 2119151585}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1 &2119151592 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1976592792326894, guid: 99e1af2884ddfba4e926c5de5ab72297,
     type: 2}
   m_PrefabInternal: {fileID: 2119151585}
 --- !u!1 &2132720852
